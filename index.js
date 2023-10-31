@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const { ApolloServer} = require('apollo-server-express');
-const schema = require('./schema');
+const schema = require('./src/schema');
 
 
 const corsOptions = {

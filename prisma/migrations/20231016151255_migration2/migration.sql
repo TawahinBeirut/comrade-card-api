@@ -1,0 +1,12 @@
+-- AlterTable
+ALTER TABLE "Basket" ALTER COLUMN "ProdutsList" SET DEFAULT ARRAY[]::INTEGER[];
+
+-- AlterTable
+ALTER TABLE "Categorie" ALTER COLUMN "ProductsList" SET DEFAULT ARRAY[]::INTEGER[],
+ALTER COLUMN "Stock" SET DEFAULT 0;
+
+-- AlterTable
+ALTER TABLE "Product" ALTER COLUMN "NbBaskets" SET DEFAULT 0;
+
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "Score" SET DEFAULT 300;

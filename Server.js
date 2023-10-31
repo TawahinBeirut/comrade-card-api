@@ -14,6 +14,9 @@ const app = express();
 const PORT = process.env.DEV_PORT;
 const server = new ApolloServer({schema,cors: corsOptions})
 app.use(cors(corsOptions))
+app.get('/',(req,res) => {
+    res.json("Backend Fonctionnel")
+})
 
 const startServer = async () => {
     await server.start();
